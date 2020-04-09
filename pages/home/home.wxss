@@ -1,8 +1,12 @@
 /* pages/home/home.wxss */
-.title{
-
-  font-size: 20px;
-
-  
-  color:#096;
+.popular image{
+  width: 100%;
+}
+.goods{
+    display: flex;
+    flex-wrap: wrap;
+}
+.goods > .item{
+    width: 48%;
+    position: relative;
 }

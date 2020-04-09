@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
-<text class="title">小笨笨快去学习叭</text>
-
+<T-swiper list="{{banners}}"/>
+<T-recommend recommends="{{recommends}}"/>
+<view class="popular">
+  <image src="/assets/home/recommend_bg.jpg" mode="widthFix"/>
+</view>
+<w-tab-control titles="{{titles}}" bind:tabclick='handleTabClick'/>
+<view class="goods">
+    <block wx:for='{{goods[currentType].list}}'>
+        <T-goods-item item='{{item}}' class='item'/>
+    </block>
+</view>
